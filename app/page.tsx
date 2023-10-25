@@ -8,7 +8,7 @@ import { nFormatter } from "@/lib/utils";
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/steven-tey/precedent",
+    "https://api.github.com/repos/wittyphantom333/nme-web",
     {
       ...(process.env.GITHUB_OAUTH_TOKEN && {
         headers: {
@@ -27,28 +27,27 @@ export default async function Home() {
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
         <a
-          href="https://twitter.com/steventey/status/1613928948915920896"
+          href="https://twitter.com/nmeguild/"
           target="_blank"
           rel="noreferrer"
           className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">
-            Introducing Precedent
+            Introducing NoMercyEver
           </p>
         </a>
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          Building blocks for your Next project
+          NoMercyEver Community Site
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          An opinionated collection of components, hooks, and utilities for your
-          Next.js project.
+          An opinionated collection of games, scripts, and utilities for jank games.
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
@@ -78,7 +77,7 @@ export default async function Home() {
           </a>
           <a
             className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-            href="https://github.com/steven-tey/precedent"
+            href="https://github.com/wittyphantom333/nme-web"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -127,7 +126,7 @@ const features = [
   {
     title: "One-click Deploy",
     description:
-      "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
+      "Jumpstart your next project by deploying NoMercyEver to [Vercel](https://vercel.com/) in one click.",
     demo: (
       <a href={DEPLOY_URL}>
         <Image
@@ -143,7 +142,7 @@ const features = [
   {
     title: "Built-in Auth + Database",
     description:
-      "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
+      "NoMercyEver comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
@@ -154,7 +153,7 @@ const features = [
   {
     title: "Hooks, utilities, and more",
     description:
-      "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
+      "NoMercyEver offers a collection of hooks, utilities, and `@vercel/og`",
     demo: (
       <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
         <span className="font-mono font-semibold">useIntersectionObserver</span>
